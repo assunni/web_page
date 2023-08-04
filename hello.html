@@ -1,0 +1,32 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <div class = "login">
+            <h1 style="text-align: center;">login page</h1>
+            <br>
+            <br>
+            <div class="input_id">
+                아이디
+                <input class = "id"></input>
+            </div>
+            <div class="input_passwd">
+                비밀번호
+                <input class="passwd"></input>
+            </div>
+            <button class = "login_button" onclick="login_completed()">
+                로그인
+            </button>
+
+            <script>
+                function login_completed(){
+                    console.log("로그인 완료!")
+                    var id = document.getElementsByClassName("id")
+                    window.open("./login_completed.html")
+                }
+            </script>
+        </div> 
+
+    </body>
+</html>
